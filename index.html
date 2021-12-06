@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+
+	.var{
+	 	background: #51C211;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 20px;
+	}
+	.oso{
+		font-size: 25px;
+	}
+	h1{
+	 	text-align: center;
+	 	color: #F1EE04;
+	}
+	.center {
+  		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+  		width: 40%;
+    }
+    img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    opacity: .9;
+    }
+    body{
+	    background-color: #2E52AA;
+	}
+	.menu a{
+        color: white;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        margin: 0;
+        font-size: 25px;
+    }
+	p{
+
+	color: yellow;
+
+	}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Calcula la edad de tu perro</h1>
+	</header>
+
+	<div class="menu">
+		<a href="vector.html">vector</a>
+	</div>
+
+	<div class="oso">
+	<a><img src="a.jpg"  style="width:30%;"></a>
+	<p>EL es Oso y tiene 4 año de vida, por el mito de su edad, tendria 7 años humanos, pero segun un estudio la manera de calcular su edad es otra, con este nuevo metodo tendria 31 años humanos</p>
+	<p>Descubre la edad de su mascota!!</p>
+	<input type="text" id="numero"/>
+	<input type="button" value="calcular" onclick="edad()"/>
+	</div>
+	<article>
+		
+	<div class="var" id="salida"></div>
+
+
+	<script language="javascript">
+		function edad(){
+
+	var resp=parseInt(document.getElementById("numero").value);
+	var y= Math.log(resp);
+	
+	var x = 16*(y)+31;
+
+document.getElementById("salida").innerHTML ="su edad en años humanos es <br>"+Math.round(x)+" <br>(MITO) su edad en años humanos es <br>"+resp*7;
+}
+</script>
+</article>
+</body>
+</html>

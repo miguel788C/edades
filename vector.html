@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+
+	.var{
+	 	background: #51C211;
+	 	color: #f0e8e6;
+	 	padding: 5px;
+	 	font-size: 25px;
+	}
+	h1{
+	 	text-align: center;
+	 	color: #F1EE04;
+	}
+	.center {
+  		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+  		width: 40%;
+    }
+    img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    opacity: .9;
+    }
+    body{
+	    background-color: #2E52AA;
+	}
+	.menu a{
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    font-size: 25px;
+    }
+	p{
+
+	color: yellow;
+
+	}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Suma de vectores</h1>
+	</header>
+
+
+	<div class="menu">
+	
+		 <a href="index.html">Edades</a>
+
+	<div id="respuesta"></div>
+
+	<article>
+		<div class="var" id="vector1"></div>
+		<div class="var" id="vector2"></div>
+		<div class="var" id="salida"></div>
+	<script language="javascript">
+
+	var limite=parseInt(prompt('Ingrese la longitud del vector:'));
+	var vector1=[];
+	var vector2=[];
+	var vectsuma=[];
+	var suma=0;
+	for (var i=0;i<limite;i++){
+		var valor1=parseInt(prompt("valor "+i+" Del vector 1"))
+		var valor2=parseInt(prompt("valor "+i+" Del vector 2"))
+		vector1[i]=valor1;
+		vector2[i]=valor2;
+		vectsuma[i]=vector1[i]+vector2[i];
+	}
+	document.getElementById("vector1").innerHTML ="el vector 1 : "+ vector1;
+	document.getElementById("vector2").innerHTML ="<br>el vector 2 : "+ vector2;
+	document.getElementById("salida").innerHTML ="<br>el vector suma es : "+ vectsuma;
+   </script>
+</article> 
+</div>
+</body>
+</html>
